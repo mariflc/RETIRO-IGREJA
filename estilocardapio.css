@@ -149,7 +149,7 @@ h3{
 /*tela de tablet e celular*/
 @media screen and (max-width:768px){
     body{
-
+        background-color: rgb(0, 0, 0);
 
     }
     .icone-menu{
@@ -171,6 +171,36 @@ h3{
         height: 100%;
 
     }
+    .cardapio{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -0px;
+        margin-left: 15px;
+}
+.Quinta{
+    margin-top: 35px;
+    width: 420px;
+    height: 550px;
+    margin-left: -20px;
+}
+.Sexta{
+    width: 420px;
+    height: 550px;
+    margin-left: -20px;
+}
+.Sabado{
+    width: 420px;
+    height: 550px;
+    margin-left: -20px;
+}
+.Domingo{
+    width: 420px;
+    height: 550px;
+    margin-left: -20px;
+
+}
 
 
 
