@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: montserrat-extra; /*nome da fonte*/
+    src: url(montserrat-extrabold.ttf); /*fonte externa baixada*/
+
+}
+@font-face {
+    font-family: montserrat-semi;
+    src: url(montserrat-semi-bold.ttf);
+}
+
+
+
+body{
+    background-image: url(Imagens/fundo.jpg);
+    background-size: 100%;
+
+}
+
+
+.menu{
+    padding: 5px 0px 0px 10px; /*padding acima direita pra baixo e esquerda*/
+    justify-content: center;
+    height: 80px;
+    width: 60px;
+    position: fixed;
+    top: 0; /*conteúdo do menu fixo em cima da página e na esquerda*/
+    left: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    background-color: orange;
+    transition: 0.2s;
+}
+
+.menu:hover{
+    width: 170px;
+    height: 100%;
+
+}
+
+.menu ul{
+    padding: 15px;
+    list-style: none;
+}
+.menu ul li{
+    padding: 10px;
+}
+
+.menu ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 150%;
+}
+
+.icone-menu{
+    padding: 9px 170px 0px 0px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+
+.cardapio{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 190px;
+}
+
+
+.Quinta{
+
+    font-family: montserrat-semi;
+    width: 350px;
+    height: 550px;
+    border-radius: 35px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+
+
+}
+.Sexta{
+    font-family: montserrat-semi;
+    background-image: url(Imagens/Retiro.PNG);
+    background-size: 100%;
+    width: 350px;
+    height: 550px;
+    border-radius: 35px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+
+}
+.Sabado{
+
+    font-family: montserrat-semi;
+    width: 350px;
+    height: 550px;
+    border-radius: 35px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+
+}
+.Domingo{
+    font-family: montserrat-semi;
+    background-image: url(Imagens/Retiro.PNG);
+    background-size: 100%;
+    width: 350px;
+    height: 550px;
+    border-radius: 35px;
+    margin-right: 10px;
+
+
+}
+
+h2{
+    font-size: 250%;
+    text-align: center;
+    margin-top: 25px;
+    font-family: montserrat-extra;
+
+}
+
+h3{
+    font-size: 170%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.ul{
+    margin-left: 50px;
+    font-size: 120%;
+    list-style-type: none;
+
+}
+
+
+
+
+
+
+/*tela de tablet e celular*/
+@media screen and (max-width:768px){
+    body{
+
+
+    }
+    .icone-menu{
+        padding: 0;
+        height: 50px;
+        width: 50px;
+    }
+
+    .menu{
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        padding-top: 2px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .menu:hover{
+        width: 170px;
+        height: 100%;
+
+    }
+
+
+
+}
+
+
+
+/*App watch 6*/
+@media screen and (max-width:162px){
+
+
+    body{
+
+    }
+    .menu{
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        padding-top: 2px;
+        padding-left: 2px;
+        padding-right: 2px;
+        font-size: 40%;
+
+    }
+
+    .menu:hover{
+        width: 48%;
+        height: 100%;
+        font-size: 50%;
+
+    }
+    .menu ul li{
+        padding: 0px;
+    }
+
+
+    .icone-menu{
+        padding: 0;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+}
+
+
+
+}
+
+/*tela de samsung*/
+@media screen and (max-width:360px){
+    body{
+        background-color: rgb(0, 0, 0);
+
+    }
+    .icone-menu{
+        padding: 0;
+        height: 50px;
+        width: 50px;
+    }
+
+    .menu{
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        padding-top: 2px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .menu:hover{
+        width: 170px;
+        height: 100%;
+
+    }
+    .cardapio{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -40px;
+        margin-left: 5px;
+}
+.Quinta{
+    margin-top: 35px;
+}
+
+
+
+}

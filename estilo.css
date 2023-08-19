@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    background-image: url(Imagens/retirojovens_img.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -15px;
+}
+
+
+.menu{
+    padding: 5px 0px 0px 10px; /*padding acima direita pra baixo e esquerda*/
+    justify-content: center;
+    height: 80px;
+    width: 60px;
+    position: fixed;
+    top: 0; /*conteúdo do menu fixo em cima da página e na esquerda*/
+    left: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    background-color: orange;
+    transition: 0.2s;
+}
+.menu:hover{
+    width: 170px;
+    height: 100%;
+
+}
+
+.menu ul{
+    padding: 15px;
+    list-style: none;
+}
+.menu ul li{
+    padding: 10px;
+}
+
+.menu ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 150%;
+}
+
+.icone-menu{
+    padding: 9px 170px 0px 0px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*tela de tablet e celular*/
+@media screen and (max-width:768px){
+    body{
+        background-image: url(Imagens/retirojovens_celular.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .icone-menu{
+        padding: 0;
+        height: 50px;
+        width: 50px;
+    }
+
+    .menu{
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        padding-top: 2px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .menu:hover{
+        width: 170px;
+        height: 100%;
+
+    }
+
+}
+
+
+
+/*App watch 6*/
+@media screen and (max-width:162px){
+
+
+    body{
+        background-image: url(Imagens/retirojovens_img.png);
+        background-size:150%;
+        background-position: -35px 0px;
+
+    }
+    .menu{
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        padding-top: 2px;
+        padding-left: 2px;
+        padding-right: 2px;
+        font-size: 40%;
+
+    }
+
+    .menu:hover{
+        width: 48%;
+        height: 100%;
+        font-size: 50%;
+
+    }
+    .menu ul li{
+        padding: 0px;
+    }
+
+
+    .icone-menu{
+        padding: 0;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+}
+
+
+
+}
+
+/*tela de samsung*/
+@media screen and (max-width:360px){
+    body{
+        background-image: url(Imagens/retirojovens_celular.JPG);
+        background-repeat: no-repeat;
+        background-size: 112%;
+        background-position: -16px 0px;
+
+    }
+    .icone-menu{
+        padding: 0;
+        height: 50px;
+        width: 50px;
+    }
+
+    .menu{
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        padding-top: 2px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .menu:hover{
+        width: 170px;
+        height: 100%;
+
+    }
+
+}
+
+
+
