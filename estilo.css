@@ -2,6 +2,19 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: montserrat-extra; /*nome da fonte*/
+    src: url(montserrat-extrabold.ttf); /*fonte externa baixada*/
+
+}
+@font-face {
+    font-family: montserrat-semi;
+    src: url(montserrat-semi-bold.ttf);
+}
+
+
+
+
 body{
     background-color: black;
     background-image: url(Imagens/retirojovens_img.PNG);
@@ -11,38 +24,37 @@ body{
 }
 
 
-.menu{
+#menu{
     padding: 5px 0px 0px 10px; /*padding acima direita pra baixo e esquerda*/
     justify-content: center;
     height: 80px;
     width: 60px;
     position: fixed;
+    overflow: hidden;
     top: 0; /*conteúdo do menu fixo em cima da página e na esquerda*/
     left: 0;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    overflow: hidden;
-    background-color: orange;
+    background-color: rgb(255, 165, 0);
     transition: 0.2s;
-}
-.menu:hover{
-    width: 170px;
-    height: 100%;
+
 
 }
 
-.menu ul{
-    padding: 15px;
+
+#menu ul{
+    padding: 10px;
     list-style: none;
 }
-.menu ul li{
+#menu ul li{
     padding: 10px;
 }
 
-.menu ul li a{
+#menu ul li a{
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 150%;
+    font-family:montserrat-semi;
+    font-size: 121%;
 }
 
 .icone-menu{
@@ -56,36 +68,22 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*tela de tablet e celular*/
-@media screen and (max-width:768px){
+@media screen and (max-width:760px){
     body{
         background-image: url(Imagens/retirojovens_celular.JPG);
         background-repeat: no-repeat;
-        background-size: 120%;
-        background-position: -35px -50px;
-
-
+        background-size: 112%;
+        background-position: -16px -45px;
     }
+
     .icone-menu{
         padding: 0;
         height: 50px;
         width: 50px;
     }
 
-    .menu{
+    #menu{
         height: 50px;
         width: 50px;
         padding: 0;
@@ -93,11 +91,11 @@ body{
         padding-left: 2px;
         padding-right: 2px;
     }
-    .menu:hover{
+    /*#menu.aberto{
         width: 170px;
         height: 100%;
 
-    }
+    }*/
 
 }
 
@@ -113,7 +111,7 @@ body{
         background-position: -35px 0px;
 
     }
-    .menu{
+    #menu{
         width: 30px;
         height: 30px;
         padding: 0;
@@ -124,13 +122,8 @@ body{
 
     }
 
-    .menu:hover{
-        width: 48%;
-        height: 100%;
-        font-size: 50%;
 
-    }
-    .menu ul li{
+    #menu ul li{
         padding: 0px;
     }
 
@@ -145,8 +138,10 @@ body{
 
 
 }
+/*Tela iphone mini*/
 
-/*tela de samsung*/
+
+/*tela de samsung 360*/
 @media screen and (max-width:360px){
     body{
         background-image: url(Imagens/retirojovens_celular.JPG);
@@ -161,7 +156,7 @@ body{
         width: 50px;
     }
 
-    .menu{
+    #menu{
         height: 50px;
         width: 50px;
         padding: 0;
@@ -169,13 +164,36 @@ body{
         padding-left: 2px;
         padding-right: 2px;
     }
-    .menu:hover{
+    /*#menu.aberto{
         width: 170px;
         height: 100%;
 
-    }
+    }*/
 
 }
 
+@media screen and (max-width:320px){
+    body{
+        background-image: url(Imagens/retirojovens_celular.JPG);
+        background-repeat: no-repeat;
+        background-size: 112%;
+        background-position: -16px -135px;
+
+    }
+    .icone-menu{
+        padding: 0;
+        height: 50px;
+        width: 50px;
+    }
+
+    #menu{
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        padding-top: 2px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
 
 
+}
