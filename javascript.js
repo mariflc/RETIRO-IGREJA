@@ -23,7 +23,7 @@ function abrirMenu(){
 
 //Telas mobile OOOOH GLORIA 25/08/2023 FUNCIONOUUUU
 
-    let query_760 = window.matchMedia("(max-width:760px)")
+    let query_760 = window.matchMedia("(max-width:500px)")
 
     if (query_760.matches){
         const menu = document.querySelector("#menu");
@@ -42,6 +42,9 @@ function abrirMenu(){
 
 }
 
+function abrirBotao(){
+    window.location.href = "cronograma_dois.html"
+}
 
 
 
