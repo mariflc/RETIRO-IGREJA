@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: montserrat-extra; /*nome da fonte*/
+    src: url(montserrat-extrabold.ttf); /*fonte externa baixada*/
+
+}
+@font-face {
+    font-family: montserrat-semi;
+    src: url(montserrat-semi-bold.ttf);
+}
+
+
+
+body{
+    background-image: url(Imagens/fundo.jpg);
+    background-size: 100%;
+
+
+}
+
+
+#menu{
+    padding: 5px 0px 0px 10px; /*padding acima direita pra baixo e esquerda*/
+    justify-content: center;
+    height: 80px;
+    width: 60px;
+    position: fixed ;
+    z-index: 1000;
+    top: 0; /*conteúdo do menu fixo em cima da página e na esquerda*/
+    left: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    background-color: rgb(255, 165, 0);
+    transition: 0.2s;
+}
+
+
+#menu ul{
+    padding: 15px;
+    list-style: none;
+}
+#menu ul li{
+    padding: 10px;
+}
+
+#menu ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family:montserrat-semi;
+    font-size: 121%;
+}
+
+.icone-menu{
+    padding: 9px 170px 0px 0px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.download{
+    position: relative;
+    display: block;
+}
+.baixador2{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+
+
+
+@media screen and (max-width:800px){
+    .img1{
+        height:100%;
+        width:100% ;
+    }
+    .baixador2{
+        height: 40px;
+        width: 40px;
+    }
+
+
+    .icone-menu{
+        padding: 0;
+        height: 50px;
+        width: 50px;
+        }
+
+    #menu{
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        padding-top: 2px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+
+}
+
+@media screen and (max-width:320px){
+
+}

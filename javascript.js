@@ -46,6 +46,9 @@ function abrirBotao(){
     window.location.href = "cronograma_dois.html"
 }
 
+function baixar(url){
+    window.location.href=url
+}
 
 
 
