@@ -28,8 +28,7 @@ body{
     justify-content: center;
     height: 80px;
     width: 60px;
-    position: fixed ;
-    z-index: 1000;
+    position: fixed;
     top: 0; /*conteúdo do menu fixo em cima da página e na esquerda*/
     left: 0;
     border-top-right-radius: 20px;
@@ -62,35 +61,38 @@ body{
     cursor: pointer;
 }
 
-.download{
-    position: relative;
-    display: block;
-}
-.baixador2{
-    position: absolute;
-    top: 10px;
-    right: 10px;
+h2{
+    font-size: 180%;
+    text-align: center;
+    margin-top: 25px;
+    font-family: montserrat-extra;
+    color: white;
 
 }
 
 
+.container_ul{
+    display: flex;
+    justify-content: center;
+}
+.ul{
+    margin-top: 20px;
+    font-size: 120%;
+    list-style-type:circle;
+    font-family: montserrat-semi;
+    color: orange;
+}
 
-@media screen and (max-width:800px){
-    .img1{
-        height:100%;
-        width:100% ;
+@media screen and (max-width:700px){
+    body{
+        background-color: rgb(0, 0, 0);
+
     }
-    .baixador2{
-        height: 40px;
-        width: 40px;
-    }
-
-
     .icone-menu{
         padding: 0;
         height: 50px;
         width: 50px;
-        }
+    }
 
     #menu{
         height: 50px;
@@ -100,10 +102,4 @@ body{
         padding-left: 2px;
         padding-right: 2px;
     }
-
-
-}
-
-@media screen and (max-width:320px){
-
 }

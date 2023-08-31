@@ -123,19 +123,6 @@ h3{
     font-size: 120%;
 }
 
-.botao{
-    text-align: center;
-    margin-top: 15px;
-}
-#botao1{
-    border-color:rgb(0, 99, 96) ;
-    background-color: rgb(2, 139, 135);
-    font-family: montserrat-semi;
-    color: white;
-    border-radius: 80px;
-    height: 40px;
-    width: 170px;
-}
 
 
 
@@ -196,6 +183,22 @@ h3{
     .diaNove{
         margin-bottom: 20px;
     }
+
+    .botao{
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    #botao1{
+    border-color:rgb(0, 99, 96) ;
+    background-color: rgb(2, 139, 135);
+    font-family: montserrat-semi;
+    color: white;
+    border-radius: 80px;
+    height: 40px;
+    width: 170px;
+    }
+
 
 
 }
