@@ -95,10 +95,11 @@ h3{
 
 }
 .aviso{
-    margin-top: 90px;
+    margin-top: 20px;
     background-color: rgb(2, 139, 135);
     border-radius: 120px;
     width: 95%;
+    margin-bottom: 30px;
 }
 
 .container_ul{
